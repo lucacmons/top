@@ -82,4 +82,20 @@ h1 {
     .folder img {
         width: 100%;
     }
+    .folder::after {
+    content: "Ação";
+    position: absolute;
+    bottom: 10px;
+    
+   
+right: 10px;
+    padding: 5px 10px;
+    font-size: 12px;
+    background-color: #007bff;
+    color: white;
+    
+   
+border-radius: 5px;
+    cursor: pointer;
+}
 }
