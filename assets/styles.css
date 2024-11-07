@@ -1,0 +1,85 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1a2a4d; /* Azul marinho */
+    margin: 0;
+    color: #ffffff;
+}
+
+/* Barra de usuário */
+.user-bar {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px 15px;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+/* Imagem do perfil */
+.user-bar img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* Faz a imagem ficar em formato de círculo */
+    margin-right: 10px;
+    border: 2px solid #ffffff;
+}
+
+/* Título */
+h1 {
+    margin-top: 60px;
+    font-size: 3rem;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Estilos das pastas */
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Define 3 colunas */
+    gap: 25px;
+    justify-items: center;
+    margin-top: 30px;
+}
+
+.folder {
+    background-color: white;
+    width: 250px; /* Tamanho maior */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.folder img {
+    width: 100%;
+    height: 200px; /* Altura fixa para melhor visualização */
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.folder p {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+    .folder {
+        font-size: 16px;
+    }
+    .folder img {
+        width: 100%;
+    }
+}
