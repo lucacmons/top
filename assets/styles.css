@@ -23,7 +23,7 @@ body {
     font-size: 1rem;
 }
 
-/* Imagem do perfil */
+
 .user-bar img {
     width: 40px;
     height: 40px;
@@ -32,7 +32,7 @@ body {
     border: 2px solid #ffffff;
 }
 
-/* Título */
+
 h1 {
     margin-top: 60px;
     font-size: 3rem;
@@ -40,7 +40,7 @@ h1 {
     text-align: center;
 }
 
-/* Estilos das pastas */
+
 .container {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Define 3 colunas */
@@ -71,7 +71,7 @@ h1 {
     color: #555;
 }
 
-/* Estilos responsivos */
+
 @media (max-width: 768px) {
     .container {
         grid-template-columns: 1fr;
